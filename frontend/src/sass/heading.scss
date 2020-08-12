@@ -1,0 +1,37 @@
+@import 'utilities';
+
+.container {
+    width: 100vw;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    &__heading {
+        padding: 2rem 0 1rem 0;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 2.5rem;
+        letter-spacing: 0.1rem;
+        font-weight: 540;
+
+        :after {
+            margin-top: 1rem;
+            content: '';
+            height: 1.5px;
+            display: block;
+            background: linear-gradient(to right,
+                    rgba(0, 0, 0, 0) 0%,
+                    rgba(255, 42, 112, 0.8),
+                    rgba(0, 0, 0, 0) 100%);
+        }
+
+        &--pink {
+            color: $pink;
+            font-style: normal;
+        }
+    }
+}

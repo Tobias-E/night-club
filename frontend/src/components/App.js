@@ -11,6 +11,8 @@ import Events from './pages/Events';
 // Components
 import Header from './static/Header';
 import Hero from './Hero';
+import Footer from './static/Footer';
+import { AssetsProvider } from './static/Assets';
 
 // Styles
 //import '../sass/App.css';
@@ -20,14 +22,17 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
-				<Route exact path='/' children={<Hero />} />
-				<Header />
-				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route path='/about' component={About} />
-					<Route path='/blog' component={Blog} />
-					<Route path='/events' component={Events} />
-				</Switch>
+				<AssetsProvider>
+					<Route exact path='/' children={<Hero />} />
+					<Header />
+					<Switch>
+						<Route exact path='/' component={Home} />
+						<Route path='/about' component={About} />
+						<Route path='/blog' component={Blog} />
+						<Route path='/events' component={Events} />
+					</Switch>
+					<Footer />
+				</AssetsProvider>
 			</Router>
 		</div>
 	);

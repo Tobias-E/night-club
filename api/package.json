@@ -17,8 +17,9 @@
     "express": "^4.17.1",
     "express-formidable": "^1.2.0",
     "express-winston": "^4.0.2",
+    "node-pre-gyp": "^0.15.0",
     "sequelize": "^5.21.3",
-    "sqlite3": "^4.1.1",
+    "sqlite3": "^4.2.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {

@@ -1,0 +1,60 @@
+@import 'utilities';
+
+.footer {
+    background-color: $black;
+    padding: 2rem 2rem 5rem 2rem;
+
+    &__logo {
+        margin-bottom: 1rem;
+    }
+
+    &__heading {
+        margin-top: 2rem;
+        color: $pink;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    &__address {
+        color: $white;
+        font-style: normal;
+        font-size: 0.9rem;
+    }
+
+    &__text {
+        color: $white;
+        margin-bottom: 2rem;
+        ;
+    }
+
+    &__icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__iconBorder {
+        border: 2px solid $white;
+        padding: 0.5rem;
+
+    }
+
+    &__iconColor {
+        border-radius: 50%;
+        background-color: $white;
+        width: calc(100vw*0.07);
+        height: calc(100vw*0.07);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--transparent {
+            background-color: $black;
+        }
+
+    }
+
+    &__link {
+        width: calc(100vw*0.1)
+    }
+}

@@ -1,0 +1,15 @@
+@import 'utilities';
+
+.events {
+	background-color: $black;
+	max-width: 100vw;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__img {
+		width: 95vw;
+	}
+}
