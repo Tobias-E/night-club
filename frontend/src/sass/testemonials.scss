@@ -1,0 +1,26 @@
+@import 'utilities';
+
+.testemonials {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    &__name,
+    &__text {
+        color: $white;
+    }
+
+    &__someContainer {
+        width: 30vw;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+
+}

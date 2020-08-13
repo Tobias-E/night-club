@@ -16,7 +16,6 @@ for (let i = 10; i < 24; i++) {
 }
 const Gallery = () => {
 	const assets = useContext(AssetsContext);
-	console.log(assets);
 	return (
 		<section className='gallery'>
 			<Heading white={'night club gallery'} />

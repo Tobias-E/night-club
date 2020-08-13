@@ -1,6 +1,9 @@
 // React & tools
 import React from 'react';
 
+// Components
+import SomeIcon from './SomeIcon';
+
 // Styles
 import '../../sass/footer.scss';
 
@@ -25,27 +28,27 @@ const Footer = () => {
 			<p className='footer__text'>MON - FRI 9 AM TO 10 PM</p>
 			<p className='footer__text '>Stay Connected With Us Night Club</p>
 			<div className='footer__icons'>
-				<FooterIcon
+				<SomeIcon
 					icon={facebook}
 					link={'https://da-dk.facebook.com/'}
 					type={'footer__iconColor '}
 				/>
-				<FooterIcon
+				<SomeIcon
 					icon={twitter}
 					link={'https://twitter.com/?lang=da'}
 					type={'footer__iconColor footer__iconColor--transparent'}
 				/>
-				<FooterIcon
+				<SomeIcon
 					icon={google}
 					link={'https://www.google.dk/'}
 					type={'footer__iconColor'}
 				/>
-				<FooterIcon
+				<SomeIcon
 					icon={skype}
 					link={'https://www.skype.com/da/'}
 					type={'footer__iconColor footer__iconColor--transparent'}
 				/>
-				<FooterIcon
+				<SomeIcon
 					icon={blogger}
 					link={'https://www.blogger.com/about/'}
 					type={'footer__iconColor'}
@@ -56,21 +59,6 @@ const Footer = () => {
 				CopyRight @ 2018 NightClub psd template all right
 			</p>
 		</footer>
-	);
-};
-
-const FooterIcon = ({ icon, link, type }) => {
-	return (
-		<div className='footer__iconBorder'>
-			<a
-				className={type}
-				href={link}
-				target='_blank'
-				rel='noopener noreferrer'
-			>
-				<img src={icon} alt='facebook' className='footer__link' />
-			</a>
-		</div>
 	);
 };
 
