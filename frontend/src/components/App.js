@@ -14,9 +14,6 @@ import Hero from './Hero';
 import Footer from './static/Footer';
 import { AssetsProvider } from './static/Assets';
 
-// Styles
-//import '../sass/App.css';
-
 // Component
 function App() {
 	return (

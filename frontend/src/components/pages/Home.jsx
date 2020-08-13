@@ -5,13 +5,7 @@ import React from 'react';
 // Components
 import Welcome from '../Welcome';
 import Events from '../Events';
-//import Heading from '../static/Heading';
-
-// Styles
-//import '../../sass/home.scss';
-
-// Images
-//import thumb1 from '../../assets/thumb1.jpg';
+import Gallery from '../Gallery';
 
 // Export
 const Home = () => {
@@ -19,6 +13,7 @@ const Home = () => {
 		<main>
 			<Welcome />
 			<Events />
+			<Gallery />
 		</main>
 	);
 };

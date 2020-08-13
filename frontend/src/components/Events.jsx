@@ -43,7 +43,6 @@ const Events = () => {
 				setData(result);
 
 				result.forEach((e) => {
-					console.log(e.eventDate);
 					let date = new Date(e.eventDate);
 					let day = date.getDate();
 					let month = date.getMonth();
