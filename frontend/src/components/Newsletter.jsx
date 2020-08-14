@@ -9,14 +9,14 @@ import '../sass/newsletter.scss';
 const url = 'http://localhost:4000/newsletters';
 const postUrl = 'http://localhost:4000/newsletters';
 async function postData(data) {
-	const response = await fetch(postUrl, {
+	const result = await fetch(postUrl, {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
-		body: JSON.stringify(data),
+		body: 'email=' + data,
 	});
-	return response.json();
+	return result;
 }
 
 // Exported Component
