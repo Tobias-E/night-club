@@ -6,6 +6,7 @@ import Welcome from '../Welcome';
 import Events from '../Events';
 import Gallery from '../Gallery';
 import Testemonials from '../Testemonials';
+import Newsletter from '../Newsletter';
 
 // Export
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
 			<Events />
 			<Gallery />
 			<Testemonials />
+			<Newsletter />
 		</main>
 	);
 };

@@ -26,13 +26,11 @@ const Testemonials = () => {
 				const response = await fetch(url);
 				const result = await response.json();
 				setData(result);
-				console.log('RESULTS::', result);
 			} catch (e) {
 				console.log('Error:', e);
 			}
 		})();
 	}, []);
-	console.log('DATA::', data);
 	return (
 		<section className='testemonials'>
 			{assets === undefined || data === undefined ? (

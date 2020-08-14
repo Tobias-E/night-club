@@ -5,12 +5,17 @@
     &__container {
         display: flex;
         flex-direction: column;
-        padding: 2rem;
+        padding: 4rem 2rem 0 2rem;
     }
 
     &__name,
     &__text {
         color: $white;
+    }
+
+    &__img {
+        width: 50vw !important;
+        align-self: center;
     }
 
     &__someContainer {
@@ -21,6 +26,43 @@
         justify-content: space-between;
 
     }
+}
 
+.carousel {
+    background-color: $black;
+}
 
+.thumbs-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbs {
+    width: 60vw;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.thumb {
+    width: 1.5rem !important;
+    height: 1.5rem;
+    margin: 0 !important;
+    color: $white;
+    background-color: $white;
+    border: none;
+}
+
+.selected {
+    background-color: $pink;
+    border: none;
+}
+
+.thumb>img {
+    width: 40px !important;
+}
+
+.slide {
+    padding: 0 0.1rem;
 }
