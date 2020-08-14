@@ -8,7 +8,7 @@ import Gallery from '../Gallery';
 import Testemonials from '../Testemonials';
 import Newsletter from '../Newsletter';
 
-// Export
+// Exported Component
 const Home = () => {
 	return (
 		<main>

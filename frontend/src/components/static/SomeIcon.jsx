@@ -1,6 +1,7 @@
-// React & Tools
+// React & Hooks
 import React from 'react';
 
+// Exported Component
 const SomeIcon = ({ icon, link, type }) => {
 	return (
 		<div className='footer__iconBorder'>

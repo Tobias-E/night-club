@@ -1,4 +1,4 @@
-// React & tools
+// React & Hooks
 import React from 'react';
 
 // Components
@@ -15,7 +15,7 @@ import google from '../../assets/some/google.png';
 import skype from '../../assets/some/skype.png';
 import blogger from '../../assets/some/blogger.png';
 
-//Component
+// Exported Component
 const Footer = () => {
 	return (
 		<footer className='footer'>

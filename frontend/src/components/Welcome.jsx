@@ -1,4 +1,4 @@
-// React & Tools
+// React & Hooks
 import React from 'react';
 
 // Components
@@ -12,6 +12,7 @@ import thumb1 from '../assets/thumb1.jpg';
 import thumb2 from '../assets/thumb2.jpg';
 import thumb3 from '../assets/thumb3.jpg';
 
+// Exported Component
 const Welcome = () => {
 	return (
 		<section className='welcome'>

@@ -1,9 +1,13 @@
+// React & Hooks
 import React, { useState, useEffect, createContext } from 'react';
 
+// Fetching Url
 const url = `http://localhost:4000/assets`;
 
+// Export for context usage
 const AssetsContext = createContext();
 
+// Exported Component
 const AssetsProvider = (props) => {
 	const [assets, setAssets] = useState();
 

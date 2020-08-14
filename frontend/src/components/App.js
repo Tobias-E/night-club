@@ -1,4 +1,4 @@
-// React & Tools
+// React & Hooks
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ import Hero from './Hero';
 import Footer from './static/Footer';
 import { AssetsProvider } from './static/Assets';
 
-// Component
+// Exported Component
 function App() {
 	return (
 		<div className='App'>

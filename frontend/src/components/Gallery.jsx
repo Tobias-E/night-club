@@ -10,16 +10,18 @@ import '../sass/gallery.scss';
 // Images
 import { AssetsContext } from './static/Assets';
 
+// Source array
 let srcArr = [];
 for (let i = 10; i < 24; i++) {
 	srcArr.push(i);
 }
+
+// Exported Component
 const Gallery = () => {
 	const assets = useContext(AssetsContext);
 	return (
 		<section className='gallery'>
 			<Heading white={'night club gallery'} />
-			{assets === undefined ? '' : console.log(assets[10].url)}
 			<div className='gallery__container'>
 				{assets === undefined
 					? ''

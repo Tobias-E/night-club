@@ -1,4 +1,4 @@
-// React
+// React & Hooks
 import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
@@ -12,16 +12,15 @@ import underline2 from '../assets/bottom_line2.png';
 import backgroundImg1 from '../assets/header_bg_1.jpg';
 import backgroundImg2 from '../assets/header_bg_2.jpg';
 
-// Component
-
+// Exported Component
 const Hero = () => {
 	const isDesktop = useMediaQuery({
 		query: '(min-device-width: 1023px)',
 	});
 
+	// Changing picture
 	const [backgroundImg, setBackgroundImg] = useState('');
 	const backgroundArr = [backgroundImg1, backgroundImg2];
-
 	useEffect(() => {
 		setBackgroundImg(
 			backgroundArr[

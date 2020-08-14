@@ -19,9 +19,11 @@ async function postData(data) {
 	return response.json();
 }
 
+// Exported Component
 const Newsletter = () => {
 	const { register, handleSubmit, errors } = useForm();
-	const onSubmit = (data) => postData(data.email) && console.log(data.email);
+	const onSubmit = (data) =>
+		postData(data.email) && console.log('Subscribed email:', data.email);
 
 	useEffect(() => {
 		(async () => {
@@ -29,7 +31,7 @@ const Newsletter = () => {
 				const response = await fetch(url);
 				const result = await response.json();
 
-				console.log('EMAIL:', result);
+				console.log('EMAILS:', result);
 			} catch (e) {
 				console.log('Error:', e);
 			}

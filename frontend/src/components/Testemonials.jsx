@@ -13,10 +13,14 @@ import '../sass/testemonials.scss';
 import facebook from '../assets/some/facebook.png';
 import twitter from '../assets/some/twitter.png';
 import { AssetsContext } from './static/Assets';
-const srcArr = [24, 25, 26];
 
+// Fetching Url
 const url = 'http://localhost:4000/testemonials';
 
+// Source array
+const srcArr = [24, 25, 26];
+
+// Exported Component
 const Testemonials = () => {
 	const [data, setData] = useState();
 	const assets = useContext(AssetsContext);

@@ -1,10 +1,11 @@
-// React & Tools
+// React & Hooks
 import React from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 // Styles
 import '../../sass/heading.scss';
 
+// Exported Component
 const Heading = ({ white, linebr, pink }) => {
 	const isDesktop = useMediaQuery({
 		query: '(min-device-width: 1023px)',

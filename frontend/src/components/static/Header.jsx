@@ -1,4 +1,4 @@
-// React & Tools
+// React & Hooks
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
@@ -9,7 +9,7 @@ import '../../sass/header.scss';
 // Images
 import logo from '../../assets/Logo_main.png';
 
-// Component
+// Exported Component
 const Header = () => {
 	const [active, setActive] = useState(false);
 	const isDesktop = useMediaQuery({

@@ -1,4 +1,4 @@
-// React & Tools
+// React & Hooks
 import React, { useState, useEffect, useContext } from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
@@ -12,8 +12,10 @@ import '../sass/events.scss';
 // Images
 import { AssetsContext } from './static/Assets';
 
+// Fetching Url
 const url = `http://localhost:4000/events`;
 
+// Exported Component
 const Events = () => {
 	// Date & conversion
 	const [eventDates, setEventDates] = useState([]);
@@ -69,7 +71,6 @@ const Events = () => {
 		<section className='events'>
 			<Heading white={'events of the'} linebr={'month'} />
 			<div className='events__container'>
-				{/* assets === undefined ? '' : console.log(assets) */}
 				{assets === undefined ? (
 					<p>Loading...</p>
 				) : (
